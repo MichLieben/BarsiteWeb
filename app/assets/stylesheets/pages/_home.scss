@@ -1,1 +1,109 @@
 // Specific CSS for your home-page
+  .home-headers:hover {
+    color: $orange;
+  }
+
+  .home-content {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+@media only screen
+and (max-width: 768px) {
+  .home-images-properties {
+    width: 90%;
+    height: auto;
+  }
+
+  .container {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .home-element {
+    margin: 10px;
+    margin-bottom: 40px;
+  }
+
+  .home-headers {
+    font-size: 14px;
+  }
+
+  u {
+    text-decoration: none;
+    border-bottom: 3px solid $orange;
+  }
+
+  .home-text {
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .home-mini-head {
+    font-family: "Amiko";
+    font-size: 8px;
+    color: $orange;
+  }
+
+  .home-libres {
+    font-family: "Libre Baskerville";
+    font-size: 10px;
+  }
+
+  .home-content {
+    font-size: 10px;
+  }
+}
+
+@media only screen
+and (min-width: 769px) {
+  .home-headers {
+    font-size: 27px;
+  }
+
+  u {
+    text-decoration: none;
+    border-bottom: 6px solid $orange;
+  }
+
+  .home-element {
+    margin: 30px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+  }
+
+  .home-text {
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 25px;
+  }
+
+  .home-images-properties {
+    width: 540px;
+    height: auto;
+  }
+
+  .home-mini-head {
+    font-family: "Amiko";
+    font-size: 9px;
+    color: $orange;
+  }
+
+  .home-libres {
+    font-family: "Libre Baskerville";
+    font-size: 16px;
+  }
+
+  .home-sep-img-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .home-image-content {
+    margin-left: 20px;
+  }
+}
+
+

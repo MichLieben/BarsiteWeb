@@ -10,9 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20171204133430) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "cocktails", force: :cascade do |t|
+    t.string "name"
+    t.text "recipe"
+    t.string "photo"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tutorials", force: :cascade do |t|
+    t.string "video"
+    t.text "content"
+    t.bigint "cocktail_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["cocktail_id"], name: "index_tutorials_on_cocktail_id"
+  end
+
+  add_foreign_key "tutorials", "cocktails"
 end
