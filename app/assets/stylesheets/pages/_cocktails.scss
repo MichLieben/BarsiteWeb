@@ -1,0 +1,22 @@
+.cocktails-contain {
+  margin-top: 75px;
+}
+
+.cocktail-image-left, .cocktail-image-right {
+  height: 340px;
+  width: 1000px;
+  display: flex;
+  margin: 75px auto;
+}
+
+.cocktail-image {
+  height: 340px;
+  width: 500px;
+  background-color: gray;
+}
+
+.cocktail-text {
+  height: 340px;
+  width: 500px;
+  background-color: white;
+}
