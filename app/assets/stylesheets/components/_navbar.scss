@@ -39,6 +39,63 @@
   color: #FF8E3F;
 }
 
+.navbar-links:focus {
+  text-decoration: none;
+  color: #FF8E3F;
+}
+
+.navbar-links:active {
+  text-decoration: none;
+  color: #FF8E3F;
+}
+
+
+// NAVBAR ANIMATION
+
+$animate: all 0.2s ease-in-out;
+
+
+.navbar-line {
+      span {
+        transition: $animate;
+        position: relative;
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          width: 0px;
+          height: 3px;
+          margin: 5px 0 0;
+          transition: $animate;
+          transition-duration: 0.35s;
+          opacity: 0;
+        }
+        &.hover-1 {
+          &:after {
+            left: 0;
+            background-color: $orange;
+          }
+        }
+
+      }
+      &:hover {
+        cursor: pointer;
+        span {
+          &:before,
+          &:after {
+            width: 100%;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+
+
+
+
+
 // font-family: 'Amiko', sans-serif;
 // font-family: 'Cardo', serif;
 // font-family: 'Libre Baskerville', serif;
