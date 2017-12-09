@@ -1,10 +1,5 @@
 <div class="container">
   <div class="cocktails-contain">
-    <% @cocktails.each do |c| %>
-    <%= c.name %>
-    <%= c.recipe %>
-    <% end %>
-
     <div class="cocktail-image-left">
       <div class="cocktail-image">
 
@@ -47,3 +42,9 @@
     </div>
   </div>
 </div>
+
+
+    <% @cocktails.each do |c| %>
+    <%= c.name %>
+    <%= c.recipe %>
+    <% end %>
