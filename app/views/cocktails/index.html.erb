@@ -1,7 +1,26 @@
-<h1>Cocktails#index</h1>
-<p>Find me in app/views/cocktails/index.html.erb</p>
+<div class="container">
+  <div class="cocktails-contain">
+    <% @cocktails.each do |c| %>
+    <%= c.name %>
+    <%= c.recipe %>
+    <% end %>
 
- <% @cocktails.each do |c| %>
- <%= c.name %>
- <%= c.recipe %>
- <% end %>
+    <div class="cocktail-image-left">
+      <div class="cocktail-image">
+
+      </div>
+      <div class="cocktail-text">
+
+      </div>
+    </div>
+    <div class="cocktail-image-right">
+      <div class="cocktail-text">
+
+      </div>
+      <div class="cocktail-image">
+
+      </div>
+
+    </div>
+  </div>
+</div>
