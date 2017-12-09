@@ -18,5 +18,25 @@
 .cocktail-text {
   height: 340px;
   width: 500px;
-  background-color: white;
+  background-color: #F2F2F2;
+}
+
+.cocktail-headers {
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+.cocktail-recipe {
+  font-size: 12px;
+  margin-left: 15px;
+  border-collapse: separate;
+  border-spacing: 5px 0px;
+}
+
+table {
+
+}
+
+.cocktail-column {
+  columns: 2;
 }
