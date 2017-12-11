@@ -8,8 +8,6 @@
   display: flex;
   margin: 75px auto;
   box-shadow: 0 2px 7px 0 rgba(0,0,0,0.07), 0 1px 0 0 rgba(0,0,0,0.03);
-  // border: 1px solid #F2F2F2;
-
 }
 
 .cocktail-image {
@@ -21,6 +19,8 @@
   width: 500px;
   background-color: rgb(252,252,252);
   padding-left: 30px;
+  position: relative;
+
 }
 
 .cocktail-headers {
@@ -39,21 +39,6 @@
 .cocktail-recipe td {
   padding-bottom: 1px;
 }
-
-// .navbar-create-button {
-//   color: $green;
-//   font-size: 14px;
-//   padding: 5px 12px;
-//   border: 1.3px solid $green;
-//   border-radius: 2px;
-//   font-weight: bold;
-// }
-
-// .navbar-create-button:hover {
-//   text-decoration: none;
-//   color: white;
-//   background-color: $green
-// }
 
 .cocktail-column {
   columns: 2;
@@ -79,28 +64,10 @@
   bottom: 50px;
 }
 
-.cocktail-text {
-  position: relative;
-}
-
-.cocktail-try-button:hover {
+.cocktail-try-button:hover, .cocktail-try-button:focus, .cocktail-try-button:active  {
   text-decoration: none;
   color: $orange;
   background-color: transparent;
   border: 1.3px solid $orange;
 }
 
-.cocktail-try-button:focus {
-  text-decoration: none;
-  color: $orange;
-  background-color: transparent;
-  border: 1.3px solid $orange;
-
-}
-
-.cocktail-try-button:active {
-  text-decoration: none;
-  color: $orange;
-  background-color: transparent;
-  border: 1.3px solid $orange;
-}

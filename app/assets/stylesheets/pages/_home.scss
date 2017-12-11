@@ -8,6 +8,15 @@
     text-justify: inter-word;
   }
 
+  .home-mini-head {
+    font-family: "Amiko";
+    color: $orange;
+  }
+
+  .home-libres {
+    font-family: "Libre Baskerville";
+  }
+
 @media only screen
 and (max-width: 768px) {
   .home-images-properties {
@@ -42,15 +51,11 @@ and (max-width: 768px) {
   }
 
   .home-mini-head {
-    font-family: "Amiko";
     font-size: 8px;
-    color: $orange;
     margin-top: 5px;
-
   }
 
   .home-libres {
-    font-family: "Libre Baskerville";
     font-size: 10px;
     margin-top: 1px;
   }
@@ -89,16 +94,12 @@ and (min-width: 769px) {
   }
 
   .home-mini-head {
-    font-family: "Amiko";
     font-size: 9px;
-    color: $orange;
   }
 
   .home-libres {
-    font-family: "Libre Baskerville";
     font-size: 16px;
     margin-top: 3px;
-
   }
 
   .home-sep-img-text {
