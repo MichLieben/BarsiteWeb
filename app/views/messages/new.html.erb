@@ -1,0 +1,10 @@
+<div class="mail-form-container">
+  <%= form_for @message, url: create_message_url do |f| %>
+    <%= notice %>
+    <%= @message.errors.full_messages.join(', ') %>
+
+    <%= f.email_field :email, placeholder: 'email' %>
+    <%= f.text_area :body, placeholder: 'body' %>
+    <%= f.submit 'Send' %>
+  <% end %>
+</div>
