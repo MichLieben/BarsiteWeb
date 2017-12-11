@@ -7,7 +7,8 @@
   width: 1000px;
   display: flex;
   margin: 75px auto;
-  border: 1px solid #F2F2F2;
+  box-shadow: 0 2px 7px 0 rgba(0,0,0,0.07), 0 1px 0 0 rgba(0,0,0,0.03);
+  // border: 1px solid #F2F2F2;
 
 }
 
@@ -16,10 +17,10 @@
 }
 
 .cocktail-text {
-  height: 338px;
+  height: 340px;
   width: 500px;
-  background-color: white;
-  padding-left: 20px;
+  background-color: rgb(252,252,252);
+  padding-left: 30px;
 }
 
 .cocktail-headers {
