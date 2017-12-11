@@ -33,7 +33,11 @@
   border-collapse: separate;
   border-spacing: 25px 0px;
   font-family: "Helvetica";
+  margin-top: 20px;
+}
 
+.cocktail-recipe td {
+  padding-bottom: 1px;
 }
 
 // .navbar-create-button {
@@ -59,6 +63,8 @@
   font-family: "Amiko";
   font-size: 11px;
   color: $orange;
+  border-bottom: 2px solid #FF8E3F;
+  width: 90%;
 }
 
 .cocktail-try-button {
