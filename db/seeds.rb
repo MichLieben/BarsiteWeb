@@ -8,7 +8,24 @@
 
 Cocktail.destroy_all
 
+# cocktails = Cocktail.create([
+#   { name: 'Mojito',
+#     Ingredient.create([
+#       { name: 'Lime Wedges'},
+#       { name: '4pcs'}
+#       ])
+#     },
+#   { name: 'Caipiroska'}
+#  ])
+
 cocktails = Cocktail.create([
-  { name: 'Mojito', recipe: 'Un bon!'},
-  { name: 'Caipiroska'}
+  { name: 'Mojito', ingredients_attributes: [
+    { name: 'Recette1' },
+    { name: 'Recette2' },
+    { name: 'Recette3'}
+    ] },
+  { name: 'Caipiroska', ingredients_attributes: [
+    { name: 'Ingredient_1'},
+    { name: 'Ingredient_2'}
+    ] },
  ])

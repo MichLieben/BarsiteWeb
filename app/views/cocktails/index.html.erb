@@ -29,10 +29,7 @@
             <td>Top</td>
           </tr>
         </table>
-<!--         <p class="cocktail-small-headings">GARNISH</p>
-        <p>Mint Sprig</p>
-        <p class="cocktail-small-headings">METHOD</p>
-        <p>Muddle, Bash, Build & Churn</p> -->
+
       <%= link_to "TRY IT YOURSELF !", tutorials_path, class: "cocktail-try-button" %>
       </div>
     </div>
@@ -54,6 +51,10 @@
 
 
     <% @cocktails.each do |c| %>
-    <%= c.name %>
-    <%= c.recipe %>
+      <%= c.name %>
+      <% @ingredients.each do |i| %>
+        <% if c.id == i.cocktail_id %>
+        <%= i.name %>
+        <% end %>
+      <% end %>
     <% end %>
