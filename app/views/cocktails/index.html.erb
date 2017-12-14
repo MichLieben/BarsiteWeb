@@ -1,43 +1,32 @@
 <div class="container">
   <div class="cocktails-contain">
+    <% @cocktails.each do |c| %>
     <div class="cocktail-image-left">
       <div class="cocktail-image">
-        <%= cl_image_tag "photo-1455621481073-d5bc1c40e3cb_spo1sf.jpg", width: 500, height:340, crop: :fill %>
+        <%= cl_image_tag c.photo.to_s, width: 500, height: 340, crop: :fill %>
       </div>
       <div class="cocktail-text">
-        <h3 class="cocktail-headers">Mojito</h3>
+        <h3 class="cocktail-headers"><%= c.name %></h3>
         <p class="cocktail-small-headings">INGREDIENTS</p>
+        <% @ingredients.each do |i| %>
+          <% if c.id == i.cocktail_id %>
         <table class="cocktail-recipe">
           <tr>
-            <td>Lime Wedges</td>
-            <td>4 pcs</td>
+            <td><%= i.name %></td>
+            <td><%= i.quantity %></td>
           </tr>
-          <tr>
-            <td>Sugar Syrup</td>
-            <td>2 cl</td>
-          </tr>
-          <tr>
-            <td>Mint Leaves</td>
-            <td>8 - 12</td>
-          </tr>
-          <tr>
-            <td>Light Rum</td>
-            <td>6 cl</td>
-          </tr>
-          <tr>
-            <td>Soda</td>
-            <td>Top</td>
-          </tr>
+          <% end %>
         </table>
-
-      <%= link_to "TRY IT YOURSELF !", tutorials_path, class: "cocktail-try-button" %>
+        <% end %>
+        <%= link_to "TRY IT YOURSELF !", tutorials_path, class: "cocktail-try-button" %>
       </div>
     </div>
+    <% end %>
 
 
 
 
-    <div class="cocktail-image-right">
+<!--     <div class="cocktail-image-right">
       <div class="cocktail-text">
 
       </div>
@@ -45,16 +34,9 @@
 
       </div>
 
-    </div>
+    </div> -->
   </div>
 </div>
 
 
-    <% @cocktails.each do |c| %>
-      <%= c.name %>
-      <% @ingredients.each do |i| %>
-        <% if c.id == i.cocktail_id %>
-        <%= i.name %>
-        <% end %>
-      <% end %>
-    <% end %>
+
