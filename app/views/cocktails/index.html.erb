@@ -2,7 +2,7 @@
   <div class="cocktails-contain">
     <% @cocktails.each do |c| %>
     <% if c.id.odd?  %>
-    <div class="cocktail-image-left">
+    <div class="cocktail-image-position">
       <div class="cocktail-image">
         <%= cl_image_tag c.photo.to_s, width: 500, height: 340, crop: :fill %>
       </div>
@@ -23,7 +23,7 @@
       </div>
     </div>
     <% else %>
-    <div class="cocktail-image-right">
+    <div class="cocktail-image-position">
       <div class="cocktail-text">
         <h3 class="cocktail-headers"><%= c.name %></h3>
         <p class="cocktail-small-headings">INGREDIENTS</p>
@@ -42,22 +42,9 @@
       <div class="cocktail-image">
         <%= cl_image_tag c.photo.to_s, width: 500, height: 340, crop: :fill %>
       </div>
-
     </div>
     <% end %>
     <% end %>
-
-
-
-<!--     <div class="cocktail-image-right">
-      <div class="cocktail-text">
-
-      </div>
-      <div class="cocktail-image">
-
-      </div>
-
-    </div> -->
   </div>
 </div>
 
